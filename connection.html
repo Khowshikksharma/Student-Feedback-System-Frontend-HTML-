@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Professional Buttons and Typing Container</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .typing-area {
+            width: 100%;
+            height: 150px;
+            border: 2px solid #007bff;
+            border-radius: 10px;
+            padding: 10px;
+            font-size: 16px;
+            outline: none;
+            margin-bottom: 20px;
+            resize: none;
+        }
+
+        .typing-area:focus {
+            border-color: #0056b3;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .btn-3d {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px #0056b3;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-3d:hover {
+            background-color: #0056b3;
+            box-shadow: 0 2px #004494;
+            transform: translateY(2px);
+        }
+
+        .btn-3d:active {
+            background-color: #003f7a;
+            box-shadow: 0 0 #003f7a;
+            transform: translateY(4px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <textarea class="typing-area" disabled>To access the home pages of the respective modules, please click on the links provided below. Please note that these pages are currently in a temporary state due to the fact that the full backend functionality has not been integrated with them yet. This means that while you can view the pages, some features and functionalities may not be fully operational or may not behave as expected.</textarea>
+        <div class="button-container">
+            <a href="adminhome.html"><button class="btn-3d">Administrator</button></a>
+            <a href="facultyhome.html"><button class="btn-3d">Faculty</button></a>
+            <a href="studenthome.html"><button class="btn-3d">Student</button></a>
+        </div>
+    </div>
+</body>
+</html>

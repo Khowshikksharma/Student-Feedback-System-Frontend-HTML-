@@ -1,0 +1,269 @@
+<html>
+ <head>
+  <title>
+   Student Log-In
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #e0f7fa, #80deea);
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #b2ebf2;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header img {
+            height: 50px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .header .user-icon {
+            font-size: 24px;
+        }
+        .nav {
+            background-color: #00acc1;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .content h2 {
+            color: #4a148c;
+            font-size: 24px;
+        }
+        .record {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 10px 0;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .record img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        .record .details {
+            flex-grow: 1;
+            text-align: left;
+        }
+        .record .details p {
+            margin: 5px 0;
+        }
+        .record .status {
+            text-align: right;
+        }
+        .record .status .active {
+            color: green;
+        }
+        .record .status .expired {
+            color: red;
+        }
+        .footer {
+            background-color: #b2ebf2;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+  </style>
+ </head>
+ <body>
+    <div class="header">
+        <img alt="FeedCraft Logo" style="height: 45px;" src="images/LOGO.png" width="50"/>
+        <div class="title">FACULTY - LOG - IN</div>
+        <ul>
+         <li>
+          <a href="facultyhome.html">
+           <div class="user-icon"><img src="images/pofile.png"/></div>
+          </a>
+          <ul class="dropdown">
+           <li><a href="facultyprofile.html">My Profile</a></li>
+           <li><a href="index.html" class="red-hover">Logout</a></li>
+          </ul>
+         </li>
+        </ul>
+       </div>
+     
+       <div style="background-color: #858585; padding: 2px;"></div>
+       
+       <div class="nav">
+        <a href="facultyhome.html">Home</a>
+        <a href="#">Post Feedback</a>
+        <a href="facultyhistory.html">History</a>
+        <a href="facultyhelp.html">Help</a>
+       </div>
+  <div class="content">
+   <h2>
+    Past Records
+   </h2>
+   <div class="record">
+    <!-- <img alt="Form Icon" height="40" src="https://storage.googleapis.com/a1aa/image/fYe3Kx8PKMlrr0C0Gzt9Je0ti4xf9f8OxwfL9ZMmeLxOXMZxJA.jpg" width="40"/> -->
+    <div class="details">
+     <p>
+      CRT Application Form
+     </p>
+     <p>
+      by - Director CRT
+      <br/>
+      expires by 07-10-2024
+     </p>
+    </div>
+    <div class="status">
+     <p class="active">
+      Active
+     </p>
+     <p>
+      Filled at: 07-10-2024
+     </p>
+    </div>
+   </div>
+   <div class="record">
+    <img alt="Form Icon" height="40" src="https://storage.googleapis.com/a1aa/image/fYe3Kx8PKMlrr0C0Gzt9Je0ti4xf9f8OxwfL9ZMmeLxOXMZxJA.jpg" width="40"/>
+    <div class="details">
+     <p>
+      CRT Application Form
+     </p>
+     <p>
+      by - Director CRT
+      <br/>
+      expires by 07-10-2024
+     </p>
+    </div>
+    <div class="status">
+     <p class="expired">
+      Expired
+     </p>
+     <p>
+      Filled at: 07-10-2024
+     </p>
+    </div>
+   </div>
+   <div class="record">
+    <img alt="Form Icon" height="40" src="https://storage.googleapis.com/a1aa/image/fYe3Kx8PKMlrr0C0Gzt9Je0ti4xf9f8OxwfL9ZMmeLxOXMZxJA.jpg" width="40"/>
+    <div class="details">
+     <p>
+      CRT Application Form
+     </p>
+     <p>
+      by - Director CRT
+      <br/>
+      expires by 07-10-2024
+     </p>
+    </div>
+    <div class="status">
+     <p class="active">
+      Active
+     </p>
+     <p>
+      Filled at: 07-10-2024
+     </p>
+    </div>
+   </div>
+   <div class="record">
+    <img alt="Form Icon" height="40" src="https://storage.googleapis.com/a1aa/image/fYe3Kx8PKMlrr0C0Gzt9Je0ti4xf9f8OxwfL9ZMmeLxOXMZxJA.jpg" width="40"/>
+    <div class="details">
+     <p>
+      CRT Application Form
+     </p>
+     <p>
+      by - Director CRT
+      <br/>
+      expires by 07-10-2024
+     </p>
+    </div>
+    <div class="status">
+     <p class="active">
+      Active
+     </p>
+     <p>
+      Filled at: 07-10-2024
+     </p>
+    </div>
+   </div>
+   <div class="record">
+    <img alt="Form Icon" height="40" src="https://storage.googleapis.com/a1aa/image/fYe3Kx8PKMlrr0C0Gzt9Je0ti4xf9f8OxwfL9ZMmeLxOXMZxJA.jpg" width="40"/>
+    <div class="details">
+     <p>
+      CRT Application Form
+     </p>
+     <p>
+      by - Director CRT
+      <br/>
+      expires by 07-10-2024
+     </p>
+    </div>
+    <div class="status">
+     <p class="expired">
+      Expired
+     </p>
+     <p>
+      Filled at: 07-10-2024
+     </p>
+    </div>
+   </div>
+   <div class="record">
+    <img alt="Form Icon" height="40" src="https://storage.googleapis.com/a1aa/image/fYe3Kx8PKMlrr0C0Gzt9Je0ti4xf9f8OxwfL9ZMmeLxOXMZxJA.jpg" width="40"/>
+    <div class="details">
+     <p>
+      CRT Application Form
+     </p>
+     <p>
+      by - Director CRT
+      <br/>
+      expires by 07-10-2024
+     </p>
+    </div>
+    <div class="status">
+     <p class="expired">
+      Expired
+     </p>
+     <p>
+      Filled at: 07-10-2024
+     </p>
+    </div>
+   </div>
+   <div class="record">
+    <img alt="Form Icon" height="40" src="https://storage.googleapis.com/a1aa/image/fYe3Kx8PKMlrr0C0Gzt9Je0ti4xf9f8OxwfL9ZMmeLxOXMZxJA.jpg" width="40"/>
+    <div class="details">
+     <p>
+      CRT Application Form
+     </p>
+     <p>
+      by - Director CRT
+      <br/>
+      expires by 07-10-2024
+     </p>
+    </div>
+    <div class="status">
+     <p class="active">
+      Active
+     </p>
+     <p>
+      Filled at: 07-10-2024
+     </p>
+    </div>
+   </div>
+  </div>
+  <div class="footer">
+   Copyright @KL-University 2024-25 SDP Project. All rights reserved.
+  </div>
+ </body>
+</html>
