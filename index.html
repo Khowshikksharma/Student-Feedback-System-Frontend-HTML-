@@ -7,6 +7,8 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
   <link rel="icon" href="./images/LOGO img.png" type="image/png">
+  <link rel="stylesheet" href="./css/preload.css"/>
+  <script defer src="./preload.js"></script>
   <link rel="stylesheet" href="./css/navbar.css"/>
   <link rel="stylesheet" href="./css/home.css"/>
 </head>
@@ -34,7 +36,8 @@
       <div class="register">
         <div style="margin: 100px;">
           <p style="font-size: 20px;">Sign up for an account to start giving feedback and improve your courses. It's quick and easy!</p>
-          <br><a href="registration.html"><button style="font-size: 20px;">Register Here!</button></a>
+          <br><a href="studentregistration.html"><button style="font-size: 20px; margin-bottom: 20px;">Student Register Here!</button></a>
+          <br><a href="facultyregistration.html"><button style="font-size: 20px;">Faculty Register Here!</button></a>
         </div>
       </div>
       <div style="border-left: solid #e3e0e0; border-radius: 90%;"></div>
@@ -100,16 +103,6 @@
   </main>
 </body>
 
-<script>
-    setTimeout(() => {
-      const preload = document.getElementById('preload');
-      preload.classList.add('loaded'); // Add the loaded class
-      // Optionally, hide the preloader completely after transition
-      setTimeout(() => {
-        preload.style.display = 'none'; 
-        document.querySelector('.header, .about, .contact-container, .content').classList.add('.header, .about, .contact-container, .content');// Hide after fade-out
-      }, 500); // Duration of the fade-out transition
-    }, 900); // Hide preloader after 5 seconds
-</script>
+
 
 </html>

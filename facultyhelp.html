@@ -1,68 +1,21 @@
 <html>
  <head>
-  <title>FeedCraft Admin Dashboard</title>
+    <title>FeedCraft Faculty Help</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
   <link rel="icon" href="./images/LOGO img.png" type="image/png">
+  <link rel="stylesheet" href="./css/preload.css"/>
+  <script defer src="./preload.js"></script>
   <link rel="stylesheet" href="./css/homesnavbar.css"/>
+  <link rel="stylesheet" href="./css/help.css"/>
 
-  <style>
-  
-        .content {
-            text-align: center;
-            padding: 50px 20px;
-        }
-        .content h1 {
-            color: #5a5a5a;
-            font-size: 36px;
-        }
-        .content p {
-            color: #5a5a5a;
-            font-size: 18px;
-            margin: 20px 300px;
-            text-align: left;
-        }
-        .form-container {
-            max-width: 800px;
-            margin: 0 auto;
-            /* background: rgba(255, 255, 255, 0.3); */
-            background: transparent;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: left;
-            color: #0000008d;
-        }
-        .form-container input, .form-container textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            background-color: #D8CFCF;
-            font-size: 16px;
-        }
-        .form-container button {
-            padding: 10px 20px;
-            margin: 10px 0px;
-            margin-right: 30px;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        .form-container .submit-btn {
-            background-color: #5a5a5a;
-            color: #fff;
-        }
-        .form-container .clear-btn {
-            background-color: #5a5a5a;
-            color: #fff;
-        }
-  </style>
  </head>
  <body>
+  <div id="preload" class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">Loading...</p>  
+  </div>
     <div class="header">
         <img alt="FeedCraft Logo" style="height: 45px;" src="./images/LOGO.png" width="50"/>
         <div class="title">FACULTY - LOG - IN</div>
@@ -78,9 +31,8 @@
          </li>
         </ul>
        </div>
-     
-       <div style="background-color: #858585; padding: 2px;"></div>
-       
+       <div style="background-color: #5b5a5ab4; margin-top: 51px; width: 100%; padding: 2px; position: fixed;"></div>
+
        <div class="nav">
         <a href="facultyhome.html">Home</a>
         <a href="#">Post Feedback</a>
@@ -88,41 +40,45 @@
         <a href="facultyhelp.html">Help</a>
        </div>
 
-  <div class="content">
-   <h1 style="color: #29016B;">
-    Help Center
-   </h1>
-   <p>
-    If you need assistance with using the Student Feedback System or have any inquiries, please contact us through the following channels:
-   </p>
-   <p>
-    General Support, Technical Support, Admin Queries: admin@empowerfeedbackhub.com
-   </p>
-   <p>
-    Phone: +1-800-123-4567
-   </p>
-   <p>
-    For additional resources, you can message/complaint our support team directly through the form below.
-   </p>
-   <div class="form-container">
-    <form>
-     <label for="subject">
-      Subject:
-     </label>
-     <input id="subject" name="subject" placeholder="Subject..." type="text"/>
-     <label for="message">
-      Message here:
-     </label>
-     <textarea id="message" name="message" placeholder="Write here..." rows="5"></textarea>
-     <button class="submit-btn" type="submit">
-      Submit
-     </button>
-     <button class="clear-btn" type="reset">
-      Clear
-     </button>
-    </form>
-   </div>
-  </div>
+       <div class="main-container-content-box">
+        <div class="content">
+          <h1 style="color: #29016B;">
+           Help Center
+          </h1>
+          <p>
+           If you need assistance with using the Student Feedback System or have any inquiries, please contact us through the following channels:
+          </p>
+          <p>
+           General Support, Technical Support, Admin Queries: admin@empowerfeedbackhub.com
+          </p>
+          <p>
+           Phone: +1-800-123-4567
+          </p>
+          <p>
+           For additional resources, you can message/complaint our support team directly through the form below.
+          </p>
+          <div class="form-container">
+           <form>
+            <label for="subject">
+             Subject:
+            </label>
+            <input id="subject" name="subject" placeholder="Subject..." type="text"/>
+            <label for="message">
+             Message here:
+            </label>
+            <textarea id="message" name="message" placeholder="Write here..." rows="5"></textarea>
+            <button class="submit-btn" type="submit">
+             Submit
+            </button>
+            <button class="clear-btn" type="reset">
+             Clear
+            </button>
+           </form>
+          </div>
+         </div>
+       </div>
+
+ 
   <footer>
     <p>Copyright ©K-University 2024-25 SDP Project. All rights reserved.</p>
   </footer>

@@ -1,6 +1,6 @@
 <html>
  <head>
-  <title>FeedCraft Faculty Dashboard</title>
+  <title>FeedCraft Student Responses</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
@@ -17,14 +17,14 @@
       </div>
   <div class="header">
    <img alt="FeedCraft Logo" style="height: 45px;" src="./images/LOGO.png" width="50"/>
-   <div class="title">FACULTY - LOG - IN</div>
+   <div class="title">STUDENT - LOG - IN</div>
    <ul>
     <li>
-     <a href="facultyhome.html">
+     <a href="studenthome.html">
       <div class="user-icon"><img src="./images/pofile.png"/></div>
      </a>
      <ul class="dropdown">
-      <li><a href="facultyprofile.html">My Profile</a></li>
+      <li><a href="studentprofile.html">My Profile</a></li>
       <li><a href="index.html" class="red-hover">Logout</a></li>
      </ul>
     </li>
@@ -33,11 +33,13 @@
   <div style="background-color: #5b5a5ab4; margin-top: 51px; width: 100%; padding: 2px; position: fixed;"></div>
 
   <div class="nav">
-   <a href="facultyhome.html">Home</a>
-   <a href="#">Post Feedback</a>
-   <a href="facultyhistory.html">History</a>
-   <a href="facultyhelp.html">Help</a>
+   <a href="studenthome.html">Home</a>
+   <a href="studentcurrentresponses.html">Responses</a>
+   <a href="studenthistory.html">History</a>
+   <a href="studenthelp.html">Help</a>
   </div>
+
+
 
   <div class="main-container-content-box">
     <div class="search-bar">
@@ -47,31 +49,47 @@
      
      
        <div class="active-forms">
-        <h2>Deadline is near</h2>
-        <div class="forms">
-         <div class="form">
-          <img alt="Form Image" height="100" src="./images/Form.png"/>
-          <p style="margin-bottom: 10%;">CRT Application Form</p>
-          <p style="color: grey;  font-size: small;">by - Director CRT</p>
-          <p style="color: grey;  font-size: small;">expires by 07-10-2024</p><br>
-          <a class="status active">Active</a> 
-          <a style="text-align: right;">Filled</a>
-         </div>
-         <div class="form">
+         <h2>All Forms</h2>
+         <div class="forms">
+          <div class="form">
+           <img alt="Form Image" height="100" src="./images/Form.png"/>
+           <p style="margin-bottom: 10%;">CRT Application Form</p>
+           <p style="color: grey;  font-size: small;">by - Director CRT</p>
+           <p style="color: grey;  font-size: small;">expires by 07-10-2024</p><br>
+           <a class="status active">Active</a> 
+           <a style="text-align: right;">Filled</a>
+          </div>
+          <div class="form">
+              <img alt="Form Image" height="100" src="./images/Form.png"/>
+              <p style="margin-bottom: 10%;">CRT Application Form</p>
+              <p style="color: grey;  font-size: small;">by - Director CRT</p>
+              <p style="color: grey;  font-size: small;">expires by 07-10-2024</p><br>
+              <a class="status expired">Active</a> 
+              <a style="text-align: right;">Unfilled</a>
+          </div>
+          <div class="form">
+              <img alt="Form Image" height="100" src="./images/Form.png"/>
+              <p style="margin-bottom: 10%;">CRT Application Form</p>
+              <p style="color: grey;  font-size: small;">by - Director CRT</p>
+              <p style="color: grey;  font-size: small;">expires by 07-10-2024</p><br>
+              <a class="status active">Active</a> 
+              <a style="text-align: right;">Unfilled</a>
+          </div>
+          <div class="form">
+              <img alt="Form Image" height="100" src="./images/Form.png"/>
+              <p style="margin-bottom: 10%;">CRT Application Form</p>
+              <p style="color: grey;  font-size: small;">by - Director CRT</p>
+              <p style="color: grey;  font-size: small;">expires by 07-10-2024</p><br>
+              <a class="status expired">Active</a> 
+              <a style="text-align: right;">Filled</a>
+          </div>
+          <div class="form">
              <img alt="Form Image" height="100" src="./images/Form.png"/>
              <p style="margin-bottom: 10%;">CRT Application Form</p>
              <p style="color: grey;  font-size: small;">by - Director CRT</p>
              <p style="color: grey;  font-size: small;">expires by 07-10-2024</p><br>
              <a class="status expired">Active</a> 
-             <a style="text-align: right;">Unfilled</a>
-         </div>
-         <div class="form">
-             <img alt="Form Image" height="100" src="./images/Form.png"/>
-             <p style="margin-bottom: 10%;">CRT Application Form</p>
-             <p style="color: grey;  font-size: small;">by - Director CRT</p>
-             <p style="color: grey;  font-size: small;">expires by 07-10-2024</p><br>
-             <a class="status active">Active</a> 
-             <a style="text-align: right;">Unfilled</a>
+             <a style="text-align: right;">Filled</a>
          </div>
          <div class="form">
              <img alt="Form Image" height="100" src="./images/Form.png"/>
@@ -81,38 +99,13 @@
              <a class="status expired">Active</a> 
              <a style="text-align: right;">Filled</a>
          </div>
-        </div>
-       </div>
-     
-       
-       <br><br>
-     
-       <div class="active-forms">
-        <h2>Active Forms</h2>
-        <div class="forms">
-         <div class="form">
-          <img alt="Form Image" height="100" src="./images/Form.png"/>
-          <p style="margin-bottom: 10%;">CRT Application Form</p>
-          <p style="color: grey;  font-size: small;">by - Director CRT</p>
-          <p style="color: grey;  font-size: small;">expires by 07-10-2024</p><br>
-          <a class="status active">Active</a> 
-          <a style="text-align: right;">Filled</a>
-         </div>
          <div class="form">
              <img alt="Form Image" height="100" src="./images/Form.png"/>
              <p style="margin-bottom: 10%;">CRT Application Form</p>
              <p style="color: grey;  font-size: small;">by - Director CRT</p>
              <p style="color: grey;  font-size: small;">expires by 07-10-2024</p><br>
              <a class="status expired">Active</a> 
-             <a style="text-align: right;">Unfilled</a>
-         </div>
-         <div class="form">
-             <img alt="Form Image" height="100" src="./images/Form.png"/>
-             <p style="margin-bottom: 10%;">CRT Application Form</p>
-             <p style="color: grey;  font-size: small;">by - Director CRT</p>
-             <p style="color: grey;  font-size: small;">expires by 07-10-2024</p><br>
-             <a class="status active">Active</a> 
-             <a style="text-align: right;">Unfilled</a>
+             <a style="text-align: right;">Filled</a>
          </div>
          <div class="form">
              <img alt="Form Image" height="100" src="./images/Form.png"/>
@@ -122,12 +115,13 @@
              <a class="status expired">Active</a> 
              <a style="text-align: right;">Filled</a>
          </div>
+         </div>
         </div>
-       </div>
   </div>
 
   
 
+  
   <footer>
     <p>Copyright ©K-University 2024-25 SDP Project. All rights reserved.</p>
   </footer>

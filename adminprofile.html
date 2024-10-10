@@ -5,11 +5,17 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
         <link rel="icon" href="./images/LOGO img.png" type="image/png">
-        <link rel="stylesheet" href="./css/homesnavbar.css"/>
+  <link rel="stylesheet" href="./css/preload.css"/>
+  <script defer src="./preload.js"></script>
+  <link rel="stylesheet" href="./css/homesnavbar.css"/>
         <link rel="stylesheet" href="./css/myprofile.css"/>
         
     </head>
     <body>
+        <div id="preload" class="preload" data-preaload>
+            <div class="circle"></div>
+            <p class="text">Loading...</p>  
+          </div>
         <div class="header">
             <a href="adminhome.html"><img alt="FeedCraft Logo" style="height: 45px;" src="./images/LOGO.png" width="50"/></a>
             <div class="title">ADMIN - LOG - IN</div>
@@ -25,9 +31,8 @@
              </li>
             </ul>
            </div>
-         
-           <div style="background-color: #858585; padding: 2px;"></div>
-         
+           <div style="background-color: #5b5a5ab4; margin-top: 51px; width: 100%; padding: 2px; position: fixed;"></div>
+
            <div class="nav">
             <a href="adminhome.html">Home</a>
             <a href="adminstudent.html">Student</a>
@@ -37,6 +42,8 @@
             <a href="admincomplaintlog.html">Complaint Logs</a>
            </div>
 
+
+       <div class="main-container-content-box">
         <div class="profile-content">
             <div class="header-row">
                 <h2>My Profile</h2>
@@ -91,6 +98,9 @@
               
             </div>
         </div>
+       </div>
+
+      
 
         <footer>
             <p>Copyright ©K-University 2024-25 SDP Project. All rights reserved.</p>
