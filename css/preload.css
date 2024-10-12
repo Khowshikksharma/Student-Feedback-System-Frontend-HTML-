@@ -12,7 +12,7 @@
 }
 
 .header, .about, .contact-container, .content, .footer, .profile-content, 
-.forms, .active-forms, .dasboard, .search-bar, .stats {
+.forms, .active-forms, .dasboard, .search-bar, .stats, .history-content {
     animation: bounce 2s ease;
     display: block;
 
