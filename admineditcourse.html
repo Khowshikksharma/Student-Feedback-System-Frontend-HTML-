@@ -9,7 +9,7 @@
   <script defer src="./preload.js"></script>
   <link rel="stylesheet" href="./css/adminhome.css"/>
   <link rel="stylesheet" href="./css/homesnavbar.css"/>
-  <link rel="stylesheet" href="./css/admintables.css"/>
+  <link rel="stylesheet" href="./css/myprofile.css"/>
  </head>
  <body>
   <div id="preload" class="preload" data-preaload>
@@ -44,51 +44,47 @@
        
 
        <div class="main-container-content-box">
-        <div class="content"> 
-          <div class="content-header">
-            <h2>Current Faculty Records</h2>
-            <div class="button-container">
-              <a href="adminfacultyrequest.html"><button class="edit-button">Request Access Records</button></a>
-              <a href="adminfacultyreject.html"><button class="edit-button">Former Faculty Records</button></a>
+        <div class="profile-content">
+            <form>
+            <div class="header-row">
+                <h2>Editing Faculty Data for "ID: 2200031954"</h2>
             </div>
-          </div>
-          <div class="table-container">
-           <table>
-            <thead>
-             <tr>
-              <th>S.no.</th>
-              <th>ID.no.</th>
-              <th>Name</th>
-              <th>Age</th>
-              <th>Gender</th>
-              <th>Ph.no.</th>
-              <th>Department</th>
-              <th>Salary</th>
-              <th>Address</th>
-              <th>Action</th>
-             </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1.</td>
-                <td>31954</td>
-                <td>Khowshikk Sharma</td>
-                <td>20</td>
-                <td>M</td>
-                <td>9876543210</td>
-                <td>CSE</td>
-                <td>120000/-</td>
-                <td>Siva Prasad Conly, Ongole - 523002</td>
-                <td class="action-icons">
-                  <a href="adminfacultyedit.html"><i style="color: blue;cursor: pointer;" class="fas fa-pen"></i></a>
-                  <i style="color: red;cursor: pointer;" class="fas fa-trash"></i>
-                </td>
-               </tr>
-            </tbody>
-           </table>
-          </div>
-         </div>
-       </div>
+
+            <div class="profile-card">
+                <div class="profile-section">
+                    <div class="profile-info">
+                            <div>
+                                <h3>Modifiable Course Data</h3>
+                            </div>
+                            <table>
+                                <tr>
+                                    <td><label for="name">Name:</label></td>
+                                    <td><input type="text" id="name" /></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="credit">Credit:</label></td>
+                                    <td><input type="text" id="credit" /></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="dob">Year:</label></td>
+                                    <td><input type="text" id="dob"  /></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="department">Department:</label></td>
+                                    <td><input type="text" id="department" /></td>
+                                </tr>
+                            </table>
+                            <div>
+                                <a href="studentprofile.html"><input type="submit" value="Update" style="width: 20%;" /></a>
+                                <input type="reset" value="Clear" style="width: 20%;" />
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    </div>
+
 
   
   

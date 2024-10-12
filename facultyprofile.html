@@ -1,112 +1,123 @@
 <html>
     <head>
-        <title>FeedCraft Faculty Myprofile</title>
+        <title>FeedCraft Faculty My Profile</title>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
         <link rel="icon" href="./images/LOGO img.png" type="image/png">
-  <link rel="stylesheet" href="./css/preload.css"/>
-  <script defer src="./preload.js"></script>
-  <link rel="stylesheet" href="./css/homesnavbar.css"/>
+        <link rel="stylesheet" href="./css/preload.css"/>
+        <script defer src="./preload.js"></script>
+        <link rel="stylesheet" href="./css/homesnavbar.css"/>
         <link rel="stylesheet" href="./css/myprofile.css"/>
-        
     </head>
     <body>
         <div id="preload" class="preload" data-preaload>
             <div class="circle"></div>
             <p class="text">Loading...</p>  
-          </div>
+        </div>
         <div class="header">
             <img alt="FeedCraft Logo" style="height: 45px;" src="./images/LOGO.png" width="50"/>
             <div class="title">FACULTY - LOG - IN</div>
             <ul>
-             <li>
-              <a href="facultyhome.html">
-               <div class="user-icon"><img src="./images/pofile.png"/></div>
-              </a>
-              <ul class="dropdown">
-               <li><a href="facultyprofile.html">My Profile</a></li>
-               <li><a href="index.html" class="red-hover">Logout</a></li>
-              </ul>
-             </li>
+                <li>
+                    <a href="facultyhome.html">
+                        <div class="user-icon"><img src="./images/pofile.png"/></div>
+                    </a>
+                    <ul class="dropdown">
+                        <li><a href="facultyprofile.html">My Profile</a></li>
+                        <li><a href="index.html" class="red-hover">Logout</a></li>
+                    </ul>
+                </li>
             </ul>
-           </div>
-           <div style="background-color: #5b5a5ab4; margin-top: 51px; width: 100%; padding: 2px; position: fixed;"></div>
+        </div>
+        <div style="background-color: #5b5a5ab4; margin-top: 51px; width: 100%; padding: 2px; position: fixed;"></div>
 
-           <div class="nav">
+        <div class="nav">
             <a href="facultyhome.html">Home</a>
-            <a href="#">Post Feedback</a>
+            <a href="facultypostfeedback.html">Post Feedback</a>
             <a href="facultyhistory.html">History</a>
             <a href="facultyhelp.html">Help</a>
-           </div>
+        </div>
 
-       <div class="main-container-content-box">
-        <div class="profile-content">
-            <div class="header-row">
-                <h2>My Profile</h2>
-                <button class="edit-button">Edit</button>
-            </div>
-
-            <div class="profile-card">
-                <div class="profile-section">
-                    <div class="profile-info">
-
-                        <img alt="Profile Picture" src="/images/pofile.png"/>
-
-                        <label>ID:</label>
-                        <input disabled type="text"/>
-
-                        <label>DOB:</label>
-                        <input disabled type="text"/>
-
-                        <label>Gender:</label>
-                        <input disabled type="text"/>
-
-                    </div>
-
-                    <div class="profile-info">
-
-                        <label>Name:</label>
-                        <input disabled type="text"/>
-
-                        <label>Father Name:</label>
-                        <input disabled type="text"/>
-
-                        <label>Phone.no:</label>
-                        <input disabled type="text"/>
-
-                        <label>Department:</label>
-                        <input disabled type="text"/>
-
-                        
-                        <label>Salary:</label>
-                        <input disabled type="text"/>
-
-                        <label>Address:</label>
-                        <input disabled type="text"/>
-
-                        <label>Email:</label>
-                        <input disabled type="text"/>
-
-                        
-                    </div>
+        <div class="main-container-content-box">
+            <div class="profile-content">
+                <div class="header-row">
+                    <h2>My Profile</h2>
+                    <a href="facultyeditprofile.html"><button class="edit-button">Edit</button></a>
                 </div>
 
-                <div class="profile-section">
-                    <div class="profile-info">
-                        <label>LinkedIn Link:</label>
-                        <input style="width: 81%;" disabled type="text"/>
+                <div class="profile-card">
+                    <div class="profile-section">
+                        <div class="profile-info">
+                            <img alt="Profile Picture" src="./images/pofile.png"/>
 
-                        <label>Facebook Link:</label>
-                        <input style="width: 81%;" disabled type="text"/>
+                            <table>
+                                <tr>
+                                    <td><label>ID:</label></td>
+                                    <td><input disabled type="text"/></td>
+                                </tr>
+                                <tr>
+                                    <td><label>DOB:</label></td>
+                                    <td><input disabled type="text"/></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Gender:</label></td>
+                                    <td><input disabled type="text"/></td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="profile-info">
+                            <table>
+                                <tr>
+                                    <td><label>Name:</label></td>
+                                    <td><input disabled type="text"/></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Father Name:</label></td>
+                                    <td><input disabled type="text"/></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Phone No:</label></td>
+                                    <td><input disabled type="text"/></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Department:</label></td>
+                                    <td><input disabled type="text"/></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Salary:</label></td>
+                                    <td><input disabled type="text"/></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Address:</label></td>
+                                    <td><input disabled type="text"/></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Email:</label></td>
+                                    <td><input disabled type="text"/></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="profile-section">
+                        <div class="profile-info">
+                            <table>
+                                <tr>
+                                    <td><label>LinkedIn Link:</label></td>
+                                    <td><input style="width: 81%;" disabled type="text"/></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Facebook Link:</label></td>
+                                    <td><input style="width: 81%;" disabled type="text"/></td>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-       </div>
-
-
-      
 
         <footer>
             <p>Copyright ©K-University 2024-25 SDP Project. All rights reserved.</p>

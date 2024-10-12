@@ -9,7 +9,7 @@
     <link rel="icon" href="./images/LOGO img.png" type="image/png">
     <link rel="stylesheet" href="./css/homesnavbar.css" />
     <link rel="stylesheet" href="./css/myprofile.css" />
-    <!-- <link rel="stylesheet" href="./css/myprofileupdatetable.css" /> -->
+    <link rel="stylesheet" href="./css/myprofileupdatetable.css" />
 
     <style>
        
@@ -22,15 +22,15 @@
         <p class="text">Loading...</p>  
     </div>
     <div class="header">
-        <img alt="FeedCraft Logo" style="height: 45px;" src="./images/LOGO.png" width="50" />
-        <div class="title">STUDENT - LOG - IN</div>
+        <a href="adminhome.html"><img alt="FeedCraft Logo" style="height: 45px;" src="./images/LOGO.png" width="50"/></a>
+        <div class="title">ADMIN - LOG - IN</div>
         <ul>
             <li>
-                <a href="studenthome.html">
-                    <div class="user-icon"><img src="./images/pofile.png" /></div>
+                <a href="adminhome.html">
+                    <div class="user-icon"><img src="./images/pofile.png"/></div>
                 </a>
                 <ul class="dropdown">
-                    <li><a href="studentprofile.html">My Profile</a></li>
+                    <li><a href="adminprofile.html">My Profile</a></li>
                     <li><a href="index.html" class="red-hover">Logout</a></li>
                 </ul>
             </li>
@@ -39,17 +39,19 @@
     <div style="background-color: #5b5a5ab4; margin-top: 51px; width: 100%; padding: 2px; position: fixed;"></div>
 
     <div class="nav">
-        <a href="studenthome.html">Home</a>
-        <a href="studentcurrentresponses.html">Responses</a>
-        <a href="studenthistory.html">History</a>
-        <a href="studenthelp.html">Help</a>
+        <a href="adminhome.html">Home</a>
+        <a href="adminstudent.html">Student</a>
+        <a href="adminfaculty.html">Faculty</a>
+        <a href="admincourses.html">Course</a>
+        <a href="adminpostfeedback.html">Post Feedback</a>
+        <a href="admincomplaintlog.html">Complaint Logs</a>
     </div>
 
     <div class="main-container-content-box">
         <div class="profile-content">
             <div class="header-row">
                 <h2>Edit Page for My Profile </h2>
-                <a href="studentprofile.html"><button class="edit-button">Back</button></a>
+                <a href="adminprofile.html"><button class="edit-button">Back</button></a>
             </div>
 
             <div class="profile-card">
@@ -64,54 +66,43 @@
                                     <td><label for="id">ID:</label></td>
                                     <td><input type="text" id="id" disabled/></td>
                                 </tr>
-                                <tr>
-                                    <td><label for="fullname">Full Name:</label></td>
-                                    <td><input type="text" id="fullname" disabled/></td>
-                                </tr>
-                                <tr>
-                                    <td><label for="gender">Gender:</label></td>
-                                    <td><input type="text" id="gender" disabled/></td>
-                                </tr>
-                                <tr>
-                                    <td><label for="dob">Date Of Birth:</label></td>
-                                    <td><input type="text" id="dob" disabled /></td>
-                                </tr>
-                                <tr>
-                                    <td><label for="fathername">Father Name:</label></td>
-                                    <td><input type="text" id="fathername" disabled /></td>
-                                </tr>
-                                <tr>
-                                    <td><label for="email">Email:</label></td>
-                                    <td><input type="text" id="email" disabled/></td>
-                                </tr>
-                                <tr>
-                                    <td><label for="department">Department:</label></td>
-                                    <td><input type="text" id="department" disabled/></td>
-                                </tr>
-                                <tr>
-                                    <td><label for="fee">Fee(per year):</label></td>
-                                    <td><input type="text" id="fee" disabled /></td>
-                                </tr>
-                                <tr>
-                                    <td><label for="contact">Phone no:</label></td>
-                                    <td><input type="text" id="contact" disabled/></td>
-                                </tr>
-                                <tr>
-                                    <td><label for="address">Address:</label></td>
-                                    <td><input type="text" id="address" disabled/></td>
-                                </tr>
+                                
                             </table>
-                            <div>
+                            <div class="head">
                                 <h3>Modifiable Student Data</h3>
                             </div>
                             <table>
                                 <tr>
-                                    <td><label for="linkedin">LinkedIn:</label></td>
-                                    <td><input type="text" id="linkedin" /></td>
+                                    <td><label for="fullname">Full Name:</label></td>
+                                    <td><input type="text" id="fullname" /></td>
                                 </tr>
                                 <tr>
-                                    <td><label for="facebook">Facebook:</label></td>
-                                    <td><input type="text" id="facebook" /></td>
+                                    <td><label for="gender">Gender:</label></td>
+                                    <td><input type="text" id="gender" /></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="dob">Date Of Birth:</label></td>
+                                    <td><input type="text" id="dob"  /></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="fathername">Father Name:</label></td>
+                                    <td><input type="text" id="fathername" /></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="email">Email:</label></td>
+                                    <td><input type="text" id="email" /></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="salary">Salary:</label></td>
+                                    <td><input type="text" id="salary"  /></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="contact">Phone no:</label></td>
+                                    <td><input type="text" id="contact" /></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="address">Address:</label></td>
+                                    <td><input type="text" id="address" /></td>
                                 </tr>
                                 <tr>
                                     <td><label for="password">Password:</label></td>
